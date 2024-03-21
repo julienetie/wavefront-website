@@ -6,6 +6,7 @@ body {
  padding: 1rem;
  font-family: "Open Sans", sans-serif;
  color: #444;
+ display: grid;
 }
 
 
@@ -15,6 +16,16 @@ main{
     > *{
         width: 35rem;
     }
+
+    > nav {
+        a.twitter{
+            width: 2rem;
+            position: absolute;
+            margin: 0 0.5rem;
+    
+        }
+    }
+
     > .logo{
         width:25%;
         min-width: 15rem;
@@ -38,4 +49,12 @@ main{
     strong {
         color: #120073ff;
     }
+}
+
+footer{
+    display: grid;
+    height: 5rem;
+    width: 35rem;
+    justify-self: center;
+    padding-bottom: 1.5rem;
 }
