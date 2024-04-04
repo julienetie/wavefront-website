@@ -1,23 +1,33 @@
 html,body{
     margin: 0;
 } 
+
 body {
  background: whitesmoke;
- padding: 1rem;
+ padding: 0;
  font-family: "Open Sans", sans-serif;
- color: #444;
+ color: hsl(0, 0%, 27%);
  display: grid;
+ font-size: 1.3rem;
+ width: 100%;
+ position: absolute;
 }
 
 
-main{
+main {
     display: grid;
     justify-items: center;
+    padding: 2rem;
+    
     > *{
-        width: 35rem;
+
+        /* width: 100dvw; */
+        /* display: none; */
     }
 
     > nav {
+        justify-self: left;
+        
         a.twitter{
             width: 2rem;
             position: absolute;
@@ -27,17 +37,20 @@ main{
     }
 
     > .logo{
-        width:25%;
-        min-width: 15rem;
+        width:80%;
+        /* min-width: 15rem; */
     }
 
     >h2 {
         letter-spacing: 0.2rem;
         font-size: 1.5rem;
+        padding: 0 2rem;
     }
 
     > ul{
         display: grid;
+        /* border: 1px solid red; */
+        /* width: 10rem; */
         /* font-size: 1.15rem; */
       
 
@@ -54,7 +67,42 @@ main{
 footer{
     display: grid;
     height: 5rem;
-    width: 35rem;
     justify-self: center;
+    padding: 2rem;
     padding-bottom: 1.5rem;
+}
+
+
+/* TABLET AND DESKTOP */
+@media (width > 40em) {
+
+    body{
+        font-size: 1.1rem;
+    }
+
+    main {
+        padding: 1rem;
+        justify-content: center;
+
+        > .logo{
+            width:25%;
+            min-width: 15rem;
+        }
+
+
+        >h2 {
+            letter-spacing: 0.2rem;
+        }
+
+                
+        > * {
+            width: 35rem;
+        }
+    }
+
+}
+
+/* TABLET ONLY */
+@media (width >= 40em) and (width <= 64em) {
+
 }
